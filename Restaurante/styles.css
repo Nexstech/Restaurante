@@ -1,0 +1,520 @@
+/* Reset e Estilo Global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+    overflow-x: hidden;
+}
+
+/* Seção Hero */
+.hero {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    flex-direction: row;
+}
+
+.hero-img {
+    width: 100%;
+    height: 100%;
+    background-image: url('reustarante.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 30px;
+    text-align: left;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    transform: translateY(-50%);
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.hero button {
+    background-color: #FF5733;
+    padding: 15px 30px;
+    color: white;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.hero button:hover {
+    background-color: #c04b27;
+}
+
+/* Seção Sobre o Restaurante */
+.sobre-restaurante {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 20px;
+    background-color: #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Sombra suave para destacar a seção */
+}
+
+.sobre-texto {
+    flex: 1;
+    padding: 20px;
+    max-width: 50%;
+}
+
+.sobre-texto h2 {
+    font-size: 2.8rem;
+    color: #333;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.sobre-texto p {
+    font-size: 1.4rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.sobre-texto .saiba-mais-btn {
+    background-color: #FF5733;
+    padding: 15px 30px;
+    color: white;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.sobre-texto .saiba-mais-btn:hover {
+    background-color: #c04b27;
+}
+
+.sobre-imagem {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+.sobre-imagem img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Menu */
+.menu {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #fff;
+}
+
+.menu h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.menu-items {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.menu-item {
+    width: 300px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.menu-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.menu-item h3 {
+    font-size: 1.8rem;
+    margin: 20px 0;
+    color: #333;
+}
+
+.menu-item p {
+    color: #555;
+    padding: 0 15px 20px;
+}
+
+.menu-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Seção O que nossos clientes dizem */
+.testimonials {
+    background-color: #f4f4f4;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+.testimonials h2::after {
+    content: '';
+    width: 100px;
+    height: 3px;
+    background-color: #FF5733;
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%);
+}
+
+.testimonial {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial p {
+    font-size: 1.4rem;
+    color: #555;
+    line-height: 1.6;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+.testimonial cite {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.testimonial:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsividade */
+
+/* Tablets (largura entre 600px e 1024px) */
+@media (max-width: 1024px) {
+    .sobre-restaurante {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .sobre-texto {
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    .sobre-imagem {
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    .sobre-texto h2 {
+        font-size: 2.2rem;
+    }
+
+    .sobre-texto p {
+        font-size: 1.2rem;
+    }
+
+    .testimonials h2 {
+        font-size: 2.2rem;
+    }
+
+    .testimonial p {
+        font-size: 1.2rem;
+    }
+}
+
+/* Smartphones (largura até 600px) */
+@media (max-width: 600px) {
+    .sobre-restaurante {
+        flex-direction: column;
+        padding: 40px 20px;
+    }
+
+    .sobre-texto h2 {
+        font-size: 2rem;
+    }
+
+    .sobre-texto p {
+        font-size: 1.1rem;
+    }
+
+    .sobre-texto .saiba-mais-btn {
+        font-size: 1rem;
+        padding: 12px 20px;
+    }
+
+    .sobre-imagem img {
+        max-width: 100%;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .testimonials h2 {
+        font-size: 1.8rem;
+    }
+
+    .testimonial p {
+        font-size: 1rem;
+    }
+
+    .testimonial cite {
+        font-size: 1rem;
+    }
+}
+
+/* Seção Avaliações */
+.avaliacao {
+    font-family: Arial, sans-serif;
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.avaliacao h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.avaliacao-estrelas {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.star {
+    font-size: 2rem;
+    color: #ddd; /* Cor padrão das estrelas */
+    transition: color 0.3s ease;
+}
+
+.star.filled {
+    color: #FF5733; /* Cor das estrelas preenchidas */
+}
+
+.star:hover {
+    color: #FF5733; /* Cor das estrelas ao passar o mouse */
+}
+
+/* Estilo do botão de envio de avaliação */
+.enviar-avaliacao-btn {
+    margin-top: 20px;
+    padding: 12px 24px;
+    background-color: #FF5733;
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.enviar-avaliacao-btn:hover {
+    background-color: #c04b27;
+}
+
+/* Responsividade para a seção de avaliações */
+@media (max-width: 1024px) {
+    .avaliacao h2 {
+        font-size: 2rem;
+    }
+
+    .star {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .avaliacao h2 {
+        font-size: 1.8rem;
+    }
+
+    .star {
+        font-size: 1.4rem;
+    }
+
+    .enviar-avaliacao-btn {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}
+
+/* Seção Reserva */
+.reserva {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #fff;
+}
+
+.reserva h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.reserva button {
+    background-color: #28a745;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.reserva button:hover {
+    background-color: #218838;
+}
+
+/* Formulário de Reserva Modal */
+.reserva-form {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.form-container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    width: 400px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.form-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-container button {
+    padding: 12px 25px;
+    margin-top: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.form-container button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 1.2rem;
+}
+/* Estilo para o select */
+.form-container select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #fff;
+    color: #333;
+    appearance: none; /* Remove a aparência padrão do select em alguns navegadores */
+    -webkit-appearance: none; /* Para navegadores Webkit (Safari, Chrome) */
+    -moz-appearance: none; /* Para Firefox */
+    cursor: pointer;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.form-container select:focus {
+    border-color: #007bff;
+    background-color: #f4f7ff;
+}
+
+/* Estilo para o select - opção selecionada */
+.form-container select option {
+    padding: 10px;
+    background-color: #fff;
+    color: #333;
+}
+
+.form-container select option[value=""]:disabled {
+    color: #aaa;
+    background-color: #f1f1f1;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #FF5733;
+}

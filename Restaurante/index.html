@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante Elegante</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <section class="hero">
+        <div class="hero-img"></div>
+        <div class="hero-text">
+            <h1>Bem-vindo ao Nosso Restaurante</h1>
+            <p>Uma experiência gastronômica única, onde sabor e elegância se encontram.</p>
+            <button>Reserve sua Mesa</button>
+        </div>
+    </section>
+
+    <section class="sobre-restaurante">
+        <div class="sobre-texto">
+            <h2>Sobre o Restaurante</h2>
+            <p>O nosso restaurante oferece uma experiência culinária única, com pratos preparados com ingredientes frescos e receitas tradicionais. A cada visita, você desfrutará de uma atmosfera acolhedora, atendimento excepcional e sabores que vão te surpreender.</p>
+            <button class="saiba-mais-btn">Saiba mais</button>
+        </div>
+        <div class="sobre-imagem">
+            <img src="restaurante2.jpg" alt="Imagem do restaurante">
+        </div>
+    </section>
+
+    <section class="menu">
+        <h2>Nossos Melhores Pratos</h2>
+        <div class="menu-items">
+            <div class="menu-item">
+                <img src="prato1.jpg" alt="Prato 1">
+                <h3>Prato Gourmet 1</h3>
+                <p>Delicioso prato preparado com os melhores ingredientes.</p>
+            </div>
+            <div class="menu-item">
+                <img src="prato2.jpg" alt="Prato 2">
+                <h3>Prato Gourmet 2</h3>
+                <p>Uma mistura perfeita de sabores refinados.</p>
+            </div>
+            <div class="menu-item">
+                <img src="prato3.jpg" alt="Prato 3">
+                <h3>Prato Gourmet 3</h3>
+                <p>Um prato sofisticado que vai encantar seu paladar.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="testimonials">
+        <h2>O que nossos clientes dizem</h2>
+        <div class="testimonial">
+            <p>"A melhor experiência gastronômica que já tive! O ambiente é incrível e o atendimento impecável."</p>
+            <cite>- João Silva</cite>
+        </div>
+        <div class="testimonial">
+            <p>"Comida maravilhosa e uma atmosfera extremamente elegante. Com certeza voltarei mais vezes."</p>
+            <cite>- Maria Oliveira</cite>
+        </div>
+    </section>
+
+
+    <section class="avaliacao">
+        <h2>Avalie-nos</h2>
+        <div class="avaliacao-estrelas">
+            <span class="star" data-value="1">&#9733;</span>
+            <span class="star" data-value="2">&#9733;</span>
+            <span class="star" data-value="3">&#9733;</span>
+            <span class="star" data-value="4">&#9733;</span>
+            <span class="star" data-value="5">&#9733;</span>
+        </div>
+        <button class="enviar-avaliacao-btn" onclick="enviarAvaliacao()">Enviar Avaliação</button>
+    </section>
+    
+
+    <section class="reserva">
+        <h2>Faça Sua Reserva</h2>
+        <button onclick="openReservaForm()">Reserve Agora</button>
+    </section>
+
+    <div id="reservaForm" class="reserva-form">
+        <div class="form-container">
+            <h3>Faça Sua Reserva</h3>
+            <form id="formReserva" onsubmit="enviarWhatsApp(event)">
+                <input type="text" id="nome" placeholder="Nome" required>
+                <input type="email" id="email" placeholder="E-mail" required>
+                <input type="tel" id="telefone" placeholder="Telefone" required>
+                <input type="date" id="dataReserva" placeholder="Data da Reserva" required>
+                <input type="time" id="horarioReserva" placeholder="Horário" required>
+                <select id="mesaReserva" required>
+                    <option value="">Selecione a Mesa</option>
+                    <option value="Mesa 1">Mesa 1</option>
+                    <option value="Mesa 2">Mesa 2</option>
+                    <option value="Mesa 3">Mesa 3</option>
+                    <option value="Mesa 4">Mesa 4</option>
+                </select>
+                <button type="submit">Confirmar Reserva</button>
+            </form>
+            <button onclick="closeReservaForm()">Fechar</button>
+        </div>
+    </div>
+    
+
+    <footer>
+        <p>&copy; Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
